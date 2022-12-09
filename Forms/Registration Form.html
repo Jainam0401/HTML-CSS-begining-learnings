@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myForm</title>
+</head>
+<body>
+    <div class="container">
+        <form action="noaction.php" method="get">
+            <h1 class="main-heading">
+                Registration Form
+            </h1>
+            <hr>
+            <h2>User Information</h2>
+            <p>User ID * :
+                <input type="text" required placeholder="Enter a Username" name="user_name">
+            </p>
+            <p>
+                Password * :
+                <input type="password" id="password" required placeholder="Enter your Password">
+            </p>
+            <p>Name * :
+                <input type="text" placeholder="Enter a name" name="name">
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Sex</legend>
+                    Male<input type="radio" name="gender" id ="male" value="male">
+                    Female<input type="radio" name="gender" id ="female" value="female">
+                </fieldset>
+            </p>
+            <p>
+                Adress:
+                <textarea placeholder="Enter your adress" name="adress" id="adress" rows="10" cols="100">
+                </textarea>
+            </p>
+            <p>
+                Email:
+                <input type="email" id="email" required placeholder="Enter your email">
+            </p>
+            <p>
+                Pincode:
+                <input type="number" name="pidcode" id="pincode" placeholder="pincode">
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Language</legend>
+                    English<input type="checkbox" name="Language" id ="eng" value="eng">
+                    Non-English<input type="checkbox" name="Language" id ="non-eng" value="non-eng">
+                </fieldset>
+            </p>
+            <p>
+                About:
+                <textarea placeholder="" name="about" id="about" rows="10" cols="100">
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit"></p>
+
+    <!-- <p id="demo">
+        <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Submit
+        </button>
+    </p> -->
+    <script>  
+        function validate() {  
+            var fname = document.myForm.name;  
+           
+            if (name.value.length <= 0) {  
+                alert("Name is required");  
+                name.focus();  
+                return false;  
+            }  
+            if (lname.value.length <= 0) {  
+                alert("Last Name is required");  
+                lname.focus();  
+                return false;  
+            } }
+
+    </script>
+    
+</body>
+</html>
